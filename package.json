@@ -1,0 +1,117 @@
+{
+  "name": "mallorca-ng",
+  "version": "0.0.0-semantically-released",
+  "description": "This is a library of common Angular recipes (components, directives, services, pipes, etc)",
+  "main": "./bundles/mallorca-ng.umd.js",
+  "module": "./modules/mallorca-ng.es5.js",
+  "es2015": "./modules/mallorca-ng.js",
+  "scripts": {
+    "commitmsg": "validate-commit-msg",
+    "build": "node build.js",
+    "commit": "git-cz",
+    "test": "karma start",
+    "pack-lib": "npm pack ./dist",
+    "publish-npm": "npm publish ./dist",
+    "publish:beta": "npm publish --tag=next ./dist",
+    "build-docs": "compodoc -p tsconfig.json",
+    "serve-docs": "compodoc -s",
+    "publish-docs": "./docs-deploy.sh",    
+    "semantic-release-pre": "semantic-release pre",
+    "semantic-release-post": "semantic-release post"
+  },
+  "typings": "./mallorca-ng.d.ts",
+  "author": "Jorge Rodríguez Galán <jrogalan@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mallorcajs/mallorca-ng.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mallorcajs/mallorca-ng/issues"
+  },
+  "homepage": "https://github.com/mallorcajs/mallorca-ng",
+  "keywords": [
+    "angular",
+    "javascript",
+    "typescript",
+    "mallorca"
+  ], 
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert",
+        "ci"
+      ],
+      "scope": {
+        "required": true,
+        "allowed": [
+          "*"
+        ],
+        "validate": true,
+        "multiple": false
+      },
+      "warnOnFail": false,
+      "maxSubjectLength": 100,
+      "subjectPattern": ".+",
+      "subjectPatternErrorMsg": "subject does not match subject pattern!",
+      "helpMessage": "",
+      "autoFix": false
+    }
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": ">= 4.4.4",
+    "@angular/core": ">= 4.4.4"
+  },
+  "devDependencies": {
+    "@angular/animations": "4.4.4",
+    "@angular/common": "4.4.4",
+    "@angular/compiler": "4.4.4",
+    "@angular/compiler-cli": "4.4.4",
+    "@angular/core": "4.4.4",
+    "@angular/platform-browser": "4.4.4",
+    "@angular/platform-browser-dynamic": "4.4.4",
+    "@angular/platform-server": "4.4.4",
+    "@compodoc/compodoc": "1.0.1",
+    "@types/jasmine": "2.6.0",
+    "@types/node": "8.0.33",
+    "chalk": "2.1.0",
+    "codelyzer": "3.2.1",
+    "core-js": "2.5.1",
+    "jasmine-core": "2.8.0",
+    "karma": "1.7.1",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-jasmine": "1.1.0",
+    "karma-sourcemap-loader": "0.3.7",
+    "karma-spec-reporter": "0.0.31",
+    "karma-webpack": "2.0.4",
+    "reflect-metadata": "0.1.10",
+    "rollup": "0.43.0",
+    "rollup-plugin-node-resolve": "3.0.0",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.0.0",
+    "semantic-release": "8.0.3",
+    "validate-commit-msg": "2.12.1",
+    "rxjs": "5.4.3",
+    "shelljs": "0.7.8",
+    "sorcery": "0.10.0",
+    "source-map-loader": "0.2.2",
+    "ts-loader": "2.3.7",
+    "tslint": "5.7.0",
+    "typescript": "2.5.3",
+    "uglify-js": "2.8.29",
+    "webpack": "3.6.0",
+    "yargs": "9.0.1",
+    "zone.js": "0.8.18"
+  }
+}
