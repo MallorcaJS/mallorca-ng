@@ -7,6 +7,7 @@
   "es2015": "./modules/mallorca-ng.js",
   "scripts": {
     "commitmsg": "validate-commit-msg",
+    "prebuild": "rimraf dist",
     "build": "node build.js",
     "commit": "git-cz",
     "test": "karma start",
