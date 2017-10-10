@@ -5,13 +5,16 @@ import { CommonModule } from '@angular/common';
  * PIPES
  */
 
-import { MCapitalizePipe } from './pipes/capitalize/capitalize.pipe';
-import { MTrimPipe } from './pipes/trim/trim.pipe';
-import { MTimeAgoPipe } from './pipes/time-ago/time-ago.pipe';
-import { MTimeDifferencePipe } from './pipes/time-difference/time-difference.pipe';
+import {
+    MCapitalizePipe,
+    MReverseStrPipe,
+    MTrimPipe,
+    MTimeAgoPipe,
+    MTimeDifferencePipe } from './pipes';
 
 const M_PIPES: Array<Type<any>> = [
   MCapitalizePipe,
+  MReverseStrPipe,
   MTrimPipe,
   MTimeAgoPipe,
   MTimeDifferencePipe,
