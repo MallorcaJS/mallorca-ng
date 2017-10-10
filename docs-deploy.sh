@@ -17,7 +17,7 @@ git init
 git config user.name "Jorge Rodríguez Galán"
 git config user.email "jrogalan@gmail.com"
 
-git remote add upstream "https://$GH_TOKEN@github.com/mallorcajs/mallorca-ng.git"
+git remote add upstream "https://12d7888f-f26b-4d84-a298-f25a851a77cc@github.com/mallorcajs/mallorca-ng.git"
 git fetch upstream
 git reset upstream/gh-pages
 
@@ -26,5 +26,5 @@ git reset upstream/gh-pages
 touch .
 
 git add -A .
-git commit -m "ci(GH-Pages): Rebuild pages"
+git commit -m "ci(gh-pages): Rebuild pages ${rev}" 
 git push -q upstream HEAD:gh-pages
