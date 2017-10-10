@@ -10,7 +10,8 @@
 
 An Angular library with common recipes (components, directives, pipes, services, etc) for your apps. Compatible with AoT and compilation &amp; Tree shaking.
 
-[Sample app](http://mallorcajs.github.io/mallorca-ng-sample) built with Angular Material, AoT compilation & webpack, and its [source code](https://github.com/mallorcajs/mallorca-ng-sample).
+<!-- [Sample app](http://mallorcajs.github.io/mallorca-ng-sample) built with Angular Material, AoT compilation & webpack, and its [source code](https://github.com/mallorcajs/mallorca-ng-sample). -->
+[Live demo](https://mallorca-ng.stackblitz.io)
 
 [Docs](http://mallorcajs.github.io/mallorca-ng).
 
