@@ -15,7 +15,7 @@
     "publish:beta": "npm publish --tag=next ./dist",
     "build-docs": "compodoc -p tsconfig.json",
     "serve-docs": "compodoc -s",
-    "publish-docs": "./docs-deploy.sh",    
+    "publish-docs": "./docs-deploy.sh",
     "semantic-release-pre": "semantic-release pre",
     "semantic-release-post": "semantic-release post"
   },
@@ -34,7 +34,7 @@
     "javascript",
     "typescript",
     "mallorca"
-  ], 
+  ],
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
