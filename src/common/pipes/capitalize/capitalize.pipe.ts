@@ -1,20 +1,21 @@
-import { Pipe, PipeTransform } from '@angular/core';
-import { isString, upperFirst } from '../../utils';
+import { Pipe, PipeTransform } from '@angular/core'
+import { isString, upperFirst } from '../../utils'
 @Pipe({
   name: 'capitalize'
 })
 export class MCapitalizePipe implements PipeTransform {
   transform(input: any, all: boolean = false): any {
     if (!isString(input)) {
-      return input;
+      return input
     }
     if (!all) {
-      return upperFirst(input.toLowerCase());
+      return upperFirst(input.toLowerCase())
     } else {
-      return input.toLowerCase()
+      return input
+        .toLowerCase()
         .split(' ')
         .map((value: string) => upperFirst(value))
-        .join(' ');
+        .join(' ')
     }
   }
 }
