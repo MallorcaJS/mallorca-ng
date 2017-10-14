@@ -553,53 +553,47 @@ import { CommonModule } from &#x27;@angular/common&#x27;;
  */
 
 import {
-    MCapitalizePipe,
-    MReverseStrPipe,
-    MTrimPipe,
-    MTimeAgoPipe,
-    MTimeDifferencePipe } from &#x27;./pipes&#x27;;
+  MCapitalizePipe,
+  MReverseStrPipe,
+  MTrimPipe,
+  MTimeAgoPipe,
+  MTimeDifferencePipe
+} from &#x27;./pipes&#x27;;
 
 const M_PIPES: Array&lt;Type&lt;any&gt;&gt; &#x3D; [
   MCapitalizePipe,
   MReverseStrPipe,
   MTrimPipe,
   MTimeAgoPipe,
-  MTimeDifferencePipe,
+
+  MTimeDifferencePipe
 ];
 
 export { MTimeAgoPipe };
 
 @NgModule({
-    imports: [
-        CommonModule
-    ],
-    declarations: [
-        M_PIPES,
-    ],
-    exports: [
-        M_PIPES
-    ]
+  imports: [CommonModule],
+  declarations: [M_PIPES],
+  exports: [M_PIPES]
 })
 export class MallorcaCommonModule {
+  /**
+   * Use in AppModule, new instance of services
+   */
+  public static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: MallorcaCommonModule
+    };
+  }
 
-    /**
-     * Use in AppModule, new instance of services
-     */
-    public static forRoot(): ModuleWithProviders {
-        return {
-            ngModule: MallorcaCommonModule
-        };
-    }
-
-    /**
-     * Use in features modules with lazy loading: New instance of services
-     */
-    public static forChild(): ModuleWithProviders {
-        return {
-            ngModule: MallorcaCommonModule
-        };
-    }
-
+  /**
+   * Use in features modules with lazy loading: New instance of services
+   */
+  public static forChild(): ModuleWithProviders {
+    return {
+      ngModule: MallorcaCommonModule
+    };
+  }
 }
 </code></pre>
     </div>

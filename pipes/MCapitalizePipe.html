@@ -331,23 +331,24 @@
 
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { Pipe, PipeTransform } from &#x27;@angular/core&#x27;;
-import { isString, upperFirst } from &#x27;../../utils&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { Pipe, PipeTransform } from &#x27;@angular/core&#x27;
+import { isString, upperFirst } from &#x27;../../utils&#x27;
 @Pipe({
   name: &#x27;capitalize&#x27;
 })
 export class MCapitalizePipe implements PipeTransform {
   transform(input: any, all: boolean &#x3D; false): any {
     if (!isString(input)) {
-      return input;
+      return input
     }
     if (!all) {
-      return upperFirst(input.toLowerCase());
+      return upperFirst(input.toLowerCase())
     } else {
-      return input.toLowerCase()
+      return input
+        .toLowerCase()
         .split(&#x27; &#x27;)
         .map((value: string) &#x3D;&gt; upperFirst(value))
-        .join(&#x27; &#x27;);
+        .join(&#x27; &#x27;)
     }
   }
 }

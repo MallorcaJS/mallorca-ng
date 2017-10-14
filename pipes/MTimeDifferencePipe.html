@@ -331,52 +331,61 @@
 
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { Pipe, PipeTransform } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { Pipe, PipeTransform } from &#x27;@angular/core&#x27;
 @Pipe({
-  name: &#x27;timeDifference&#x27;,
+  name: &#x27;timeDifference&#x27;
 })
 export class MTimeDifferencePipe implements PipeTransform {
   transform(start: any, end: any): string {
-    const startTime: Date &#x3D; new Date(start);
-    let endTime: Date;
+    const startTime: Date &#x3D; new Date(start)
+    let endTime: Date
 
     if (end !&#x3D;&#x3D; undefined) {
-      endTime &#x3D; new Date(end);
+      endTime &#x3D; new Date(end)
     } else {
-      endTime &#x3D; new Date();
+      endTime &#x3D; new Date()
     }
 
     if (!startTime.getTime() || !endTime.getTime()) {
-      return &#x27;Invalid Date&#x27;;
+      return &#x27;Invalid Date&#x27;
     }
 
-    let diff: number &#x3D; Math.floor((endTime.getTime() - startTime.getTime()) / 1000);
+    let diff: number &#x3D; Math.floor(
+      (endTime.getTime() - startTime.getTime()) / 1000
+    )
 
-    const days: number &#x3D; Math.floor(diff / (60 * 60 * 24));
-    diff &#x3D; diff - (days * (60 * 60 * 24));
+    const days: number &#x3D; Math.floor(diff / (60 * 60 * 24))
+    diff &#x3D; diff - days * (60 * 60 * 24)
 
-    const hours: number &#x3D; Math.floor(diff / (60 * 60));
-    diff &#x3D; diff - (hours * (60 * 60));
+    const hours: number &#x3D; Math.floor(diff / (60 * 60))
+    diff &#x3D; diff - hours * (60 * 60)
 
-    const minutes: number &#x3D; Math.floor(diff / (60));
-    diff -&#x3D; minutes * (60);
+    const minutes: number &#x3D; Math.floor(diff / 60)
+    diff -&#x3D; minutes * 60
 
-    const seconds: number &#x3D; diff;
+    const seconds: number &#x3D; diff
 
-    const pad: string &#x3D; &#x27;00&#x27;;
+    const pad: string &#x3D; &#x27;00&#x27;
 
-    let daysFormatted: string &#x3D; &#x27;&#x27;;
+    let daysFormatted: string &#x3D; &#x27;&#x27;
 
     if (days &gt; 0 &amp;&amp; days &lt; 2) {
-      daysFormatted &#x3D; &#x27; day - &#x27;;
+      daysFormatted &#x3D; &#x27; day - &#x27;
     } else if (days &gt; 1) {
-      daysFormatted &#x3D; &#x27; days - &#x27; ;
+      daysFormatted &#x3D; &#x27; days - &#x27;
     }
 
-    return (days &gt; 0 ? days + daysFormatted : daysFormatted) +
-     pad.substring(0, pad.length - (hours + &#x27;&#x27;).length) + hours + &#x27;:&#x27; +
-     pad.substring(0, pad.length - (minutes + &#x27;&#x27;).length) + minutes + &#x27;:&#x27; +
-     pad.substring(0, pad.length - (seconds + &#x27;&#x27;).length) + seconds;
+    return (
+      (days &gt; 0 ? days + daysFormatted : daysFormatted) +
+      pad.substring(0, pad.length - (hours + &#x27;&#x27;).length) +
+      hours +
+      &#x27;:&#x27; +
+      pad.substring(0, pad.length - (minutes + &#x27;&#x27;).length) +
+      minutes +
+      &#x27;:&#x27; +
+      pad.substring(0, pad.length - (seconds + &#x27;&#x27;).length) +
+      seconds
+    )
   }
 }
 </code></pre>
