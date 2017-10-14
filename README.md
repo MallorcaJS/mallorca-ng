@@ -2,8 +2,10 @@
 
 [![build status](https://img.shields.io/travis/MallorcaJS/mallorca-ng.svg?style=flat-square)](https://travis-ci.org/MallorcaJS/mallorca-ng)
 [![npm](https://img.shields.io/npm/v/mallorca-ng.svg?style=flat-square)](https://www.npmjs.com/package/mallorca-ng)
+[![coveralls](https://img.shields.io/coveralls/MallorcaJS/mallorca-ng.svg?style=flat-square)](https://coveralls.io/github/MallorcaJS/mallorca-ng)
 [![commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![license](https://img.shields.io/github/license/mallorcajs/mallorca-ng.svg?style=flat-square)](https://github.com/mallorcajs/mallorca-ng/blob/master/LICENSE)
 
 ## What is MallorcaNG?
@@ -11,9 +13,9 @@
 An Angular library with common recipes (components, directives, pipes, services, etc) for your apps. Compatible with AoT and compilation &amp; Tree shaking.
 
 <!-- [Sample app](http://mallorcajs.github.io/mallorca-ng-sample) built with Angular Material, AoT compilation & webpack, and its [source code](https://github.com/mallorcajs/mallorca-ng-sample). -->
-[Live demo](https://mallorca-ng.stackblitz.io)
+[Live demo](https://stackblitz.com/edit/mallorca-ng)
 
-[Docs](http://mallorcajs.github.io/mallorca-ng).
+[Docs](http://mallorcajs.github.io/mallorca-ng)
 
 ## Installing
 You can add `mallorca-ng` to your project using `npm`:
