@@ -1,5 +1,5 @@
-import { Type, NgModule, ModuleWithProviders } from '@angular/core'
-import { CommonModule } from '@angular/common'
+import { Type, NgModule, ModuleWithProviders } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 /**
  * PIPES
@@ -11,17 +11,18 @@ import {
   MTrimPipe,
   MTimeAgoPipe,
   MTimeDifferencePipe
-} from './pipes'
+} from './pipes';
 
 const M_PIPES: Array<Type<any>> = [
   MCapitalizePipe,
   MReverseStrPipe,
   MTrimPipe,
   MTimeAgoPipe,
-  MTimeDifferencePipe
-]
 
-export { MTimeAgoPipe }
+  MTimeDifferencePipe
+];
+
+export { MTimeAgoPipe };
 
 @NgModule({
   imports: [CommonModule],
@@ -35,7 +36,7 @@ export class MallorcaCommonModule {
   public static forRoot(): ModuleWithProviders {
     return {
       ngModule: MallorcaCommonModule
-    }
+    };
   }
 
   /**
@@ -44,6 +45,6 @@ export class MallorcaCommonModule {
   public static forChild(): ModuleWithProviders {
     return {
       ngModule: MallorcaCommonModule
-    }
+    };
   }
 }
