@@ -29,7 +29,11 @@
     ]
   },
   "typings": "./mallorca-ng.d.ts",
-  "author": "Jorge Rodríguez Galán <jrogalan@gmail.com>",
+  "author": "Mallorca JS",
+  "contributors": [
+    "Jorge Rodríguez Galán <jrogalan@gmail.com>",
+    "Aleix Suau <aleixmartinez@macrofonoestudio.es>"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/mallorcajs/mallorca-ng.git"

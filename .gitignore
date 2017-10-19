@@ -6,3 +6,5 @@ $ cat .gitignore
 
 *.log
 *.tgz
+*yarn.lock
+*package-lock.json

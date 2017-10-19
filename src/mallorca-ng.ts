@@ -1,2 +1,1 @@
-// Public classes.
-export { MallorcaCommonModule } from './common/common.module';
+export { MallorcaCommonModule } from './core';

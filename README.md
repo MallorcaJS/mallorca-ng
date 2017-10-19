@@ -13,11 +13,9 @@
 An Angular library with common recipes (components, directives, pipes, services, etc) for your apps. Compatible with AoT and compilation &amp; Tree shaking.
 
 <!-- [Sample app](http://mallorcajs.github.io/mallorca-ng-sample) built with Angular Material, AoT compilation & webpack, and its [source code](https://github.com/mallorcajs/mallorca-ng-sample). -->
-[Live demo](https://stackblitz.com/edit/mallorca-ng)
 
-[Docs](http://mallorcajs.github.io/mallorca-ng)
 
-## Installing
+## Getting Started
 You can add `mallorca-ng` to your project using `npm`:
 ```Shell
 npm install mallorca-ng --save 
@@ -26,6 +24,27 @@ To install the pre-release package:
 ```Shell
 npm install --save mallorca-ng@next
 ```
+
+```typescript
+// app.module.ts
+import { MallorcaCommonModule } from 'mallorca-ng';
+
+@NgModule({
+    // ...
+    imports: [
+        MallorcaCommonModule.forRoot()        
+    ]
+}
+export class AppModule { }
+```
+
+## Documentation
+
+Documentation available at [Docs](http://mallorcajs.github.io/mallorca-ng)
+
+## Demo
+Editable sample app available at [Live demo](https://stackblitz.com/edit/mallorca-ng)
+
 
 ## Loading
 #### Using SystemJS configuration
