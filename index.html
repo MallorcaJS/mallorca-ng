@@ -304,12 +304,23 @@
 <h2 id="what-is-mallorcang-">What is MallorcaNG?</h2>
 <p>An Angular library with common recipes (components, directives, pipes, services, etc) for your apps. Compatible with AoT and compilation &amp; Tree shaking.</p>
 <!-- [Sample app](http://mallorcajs.github.io/mallorca-ng-sample) built with Angular Material, AoT compilation & webpack, and its [source code](https://github.com/mallorcajs/mallorca-ng-sample). -->
-<p><a href="https://stackblitz.com/edit/mallorca-ng">Live demo</a></p>
-<p><a href="http://mallorcajs.github.io/mallorca-ng">Docs</a></p>
-<h2 id="installing">Installing</h2>
+<h2 id="getting-started">Getting Started</h2>
 <p>You can add <code>mallorca-ng</code> to your project using <code>npm</code>:</p>
 <pre class="line-numbers"><code class="language-Shell">npm install mallorca-ng --save</code></pre><p>To install the pre-release package:</p>
-<pre class="line-numbers"><code class="language-Shell">npm install --save mallorca-ng&#64;next</code></pre><h2 id="loading">Loading</h2>
+<pre class="line-numbers"><code class="language-Shell">npm install --save mallorca-ng&#64;next</code></pre><pre class="line-numbers"><code class="language-typescript">// app.module.ts
+import { MallorcaCommonModule } from &#39;mallorca-ng&#39;;
+
+&#64;NgModule({
+    // ...
+    imports: [
+        MallorcaCommonModule.forRoot()        
+    ]
+}
+export class AppModule { }</code></pre><h2 id="documentation">Documentation</h2>
+<p>Documentation available at <a href="http://mallorcajs.github.io/mallorca-ng">Docs</a></p>
+<h2 id="demo">Demo</h2>
+<p>Editable sample app available at <a href="https://stackblitz.com/edit/mallorca-ng">Live demo</a></p>
+<h2 id="loading">Loading</h2>
 <h4 id="using-systemjs-configuration">Using SystemJS configuration</h4>
 <pre class="line-numbers"><code class="language-JavaScript">System.config({
     map: {

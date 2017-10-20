@@ -322,7 +322,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/common/pipes/time-ago/time-ago.pipe.ts</code>
+            <code>src/core/common/pipes/time/time-ago/time-ago.pipe.ts</code>
         </p>
 
 
@@ -333,7 +333,7 @@
     <div class="tab-pane fade tab-source-code" id="source">
         <pre class="line-numbers"><code class="language-typescript">import { Pipe, PipeTransform } from &#x27;@angular/core&#x27;;
 @Pipe({
-  name: &#x27;timeAgo&#x27;,
+  name: &#x27;timeAgo&#x27;
 })
 export class MTimeAgoPipe implements PipeTransform {
   transform(time: any, reference: any): string {

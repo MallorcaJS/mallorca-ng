@@ -322,7 +322,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/common/pipes/reverse-str/reverse-str.pipe.ts</code>
+            <code>src/core/common/pipes/string/reverse-str/reverse-str.pipe.ts</code>
         </p>
 
 
@@ -331,19 +331,19 @@
 
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { Pipe, PipeTransform } from &#x27;@angular/core&#x27;
-import { isString } from &#x27;../../utils&#x27;
+        <pre class="line-numbers"><code class="language-typescript">import { Pipe, PipeTransform } from &#x27;@angular/core&#x27;;
+import { isString } from &#x27;../../../utils&#x27;;
 @Pipe({
   name: &#x27;reverseStr&#x27;
 })
 export class MReverseStrPipe implements PipeTransform {
   transform(input: any): any {
     if (!isString(input)) {
-      return input
+      return input;
     }
     return Array.from(input)
       .reverse()
-      .join(&#x27;&#x27;)
+      .join(&#x27;&#x27;);
   }
 }
 </code></pre>
