@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
-  name: 'timeAgo',
+  name: 'timeAgo'
 })
 export class MTimeAgoPipe implements PipeTransform {
   transform(time: any, reference: any): string {
