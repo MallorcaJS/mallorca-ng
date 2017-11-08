@@ -10,7 +10,6 @@ const ESM5_DIR = `${NPM_DIR}/esm5`;
 const BUNDLES_DIR = `${NPM_DIR}/bundles`;
 const OUT_DIR_ESM5 = `${NPM_DIR}/package/esm5`;
 
-
 shell.echo(`Start building...`);
 
 shell.rm(`-Rf`, `${NPM_DIR}/*`);

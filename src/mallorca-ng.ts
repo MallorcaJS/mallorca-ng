@@ -1,1 +1,1 @@
-export { MallorcaCommonModule } from './core';
+export { MallorcaCommonModule } from './core/index';

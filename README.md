@@ -75,7 +75,7 @@ This library is compatible with AoT compilation & Server Side Rendering. It also
 It would be awesome if you would like to contribute code or help with bugs. Just follow the guidelines [CONTRIBUTING](https://github.com/mallorcajs/mallorca-ng/blob/master/CONTRIBUTING.md).
 
 ## Aditional Resources
-- [Library starter by Roberto Simonetti](https://github.com/robisim74/angular-library-starter) Allows you to create a library for Angular 4+ apps
+- [Library starter by Roberto Simonetti](https://github.com/robisim74/angular-library-starter) Allows you to create a library for Angular 5+ apps
 
 ## License
 MIT

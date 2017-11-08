@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { isString, upperFirst } from '../../../utils';
+import { isString, upperFirst } from '../../../utils/index';
 @Pipe({
   name: 'capitalize'
 })

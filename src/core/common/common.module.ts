@@ -11,7 +11,7 @@ import {
   MTrimPipe,
   MTimeAgoPipe,
   MTimeDifferencePipe
-} from './pipes';
+} from './pipes/index';
 
 const M_PIPES: Array<Type<any>> = [
   MCapitalizePipe,

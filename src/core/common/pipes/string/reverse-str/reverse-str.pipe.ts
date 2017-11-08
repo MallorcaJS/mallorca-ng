@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { isString } from '../../../utils';
+import { isString } from '../../../utils/index';
 @Pipe({
   name: 'reverseStr'
 })

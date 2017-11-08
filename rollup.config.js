@@ -1,6 +1,6 @@
 import resolve from "rollup-plugin-node-resolve";
 import sourcemaps from 'rollup-plugin-sourcemaps';
-
+import commonjs from 'rollup-plugin-commonjs';
 /**
   * Add here external dependencies that actually you use.
   *
@@ -25,11 +25,16 @@ const globals = {
 };
 
 export default {
-  plugins: [resolve(), sourcemaps()],
+  plugins: [
+    commonjs({
+      include: 'node_modules/**'
+    }),
+    resolve(),
+    sourcemaps()],
   onwarn: () => { return; },
   output: {
     format: "umd",
-    name: "ng.angularLibraryStarter",
+    name: "ng.mallorcaNG",
     globals: globals,
     sourcemap: true,
     exports: "named"
