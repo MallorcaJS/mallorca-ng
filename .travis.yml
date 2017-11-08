@@ -14,7 +14,7 @@ branches:
   only:
     - master
 node_js:
-  - stable
+  - "8"
 before_install:
   - npm i npm@^5 -g
   - export DISPLAY=:99.0

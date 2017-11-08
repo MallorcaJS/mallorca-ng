@@ -1,0 +1,4 @@
+/**
+  * @license mallorca-ng
+  * MIT license
+  */
